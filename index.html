@@ -13,6 +13,20 @@ input[type="text"] { height: 22px; padding: 0px 5px; font-size: 16px; }
 input.btn { background: yellow; border: 1px solid #4e4e4e; padding: 5px 20px; font-size: 16px; font-weight: 600; cursor: pointer; }
 </style>
 <body>
+<?php
+
+
+  $to = "polsingambule435gmail.com";
+  $subject = "Test Mail";
+  $message = "Hello! This Is a Simple Email Messeage.";
+  $from = "pappuambule@gmail.com";
+  
+  mail($to , $subject, $message, $headers);
+
+  echo "Mail Send";
+
+ ?>
+    
     <body>
         <br>
         <div class="form">
