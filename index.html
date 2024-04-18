@@ -49,6 +49,25 @@ Wishing everyone a joyous Hanuman Jayanti filled with blessings, strength, and d
 
 
 <?php $date = new DateTime('-10 days'); $formatted_date = $date->format('jS F Y'); echo $formatted_date; ?>
+
+
+--------------------------------
+<button onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+<script>
+    function shareOnWhatsApp() {
+        // Get the current page URL
+        var currentURL = window.location.href;
+        
+        // Construct the WhatsApp share URL
+        var whatsappURL = 'whatsapp://send?text=' + encodeURIComponent(currentURL);
+        
+        // Open the WhatsApp share URL
+        window.location.href = whatsappURL;
+    }
+</script>
+
+
+        
     </body>
 </body>
 </html>
